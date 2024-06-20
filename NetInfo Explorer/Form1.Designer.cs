@@ -35,7 +35,7 @@
             // button1
             // 
             button1.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(532, 528);
+            button1.Location = new Point(514, 528);
             button1.Margin = new Padding(4, 5, 4, 5);
             button1.Name = "button1";
             button1.Size = new Size(126, 53);
@@ -47,7 +47,7 @@
             // textBox1
             // 
             textBox1.BackColor = SystemColors.Window;
-            textBox1.Location = new Point(240, 350);
+            textBox1.Location = new Point(222, 349);
             textBox1.Margin = new Padding(4, 5, 4, 5);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(711, 31);
