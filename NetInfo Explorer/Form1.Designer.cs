@@ -34,10 +34,11 @@
             // 
             // button1
             // 
-            button1.Font = new Font("Mongolian Baiti", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(375, 320);
+            button1.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.Location = new Point(532, 528);
+            button1.Margin = new Padding(4, 5, 4, 5);
             button1.Name = "button1";
-            button1.Size = new Size(88, 32);
+            button1.Size = new Size(126, 53);
             button1.TabIndex = 0;
             button1.Text = "Submit";
             button1.UseVisualStyleBackColor = true;
@@ -46,19 +47,21 @@
             // textBox1
             // 
             textBox1.BackColor = SystemColors.Window;
-            textBox1.Location = new Point(168, 210);
+            textBox1.Location = new Point(240, 350);
+            textBox1.Margin = new Padding(4, 5, 4, 5);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(499, 23);
+            textBox1.Size = new Size(711, 31);
             textBox1.TabIndex = 1;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1143, 750);
             Controls.Add(textBox1);
             Controls.Add(button1);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "Form1";
             Text = "NetInfo Explorer";
             Load += Form1_Load;
