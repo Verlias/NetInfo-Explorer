@@ -1,6 +1,3 @@
-//Imports
-using System.Net.NetworkInformation;
-
 namespace NetInfo_Explorer
     //this is a comment
 {
