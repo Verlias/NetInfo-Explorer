@@ -1,3 +1,7 @@
+using System;
+using System.Net;
+using System.Net.Sockets;
+
 namespace NetInfo_Explorer
     //this is a comment
 {
@@ -21,7 +25,8 @@ namespace NetInfo_Explorer
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Button 2 Clicked");
+            string Local_IP = GetLocalIPAddress();
+            MessageBox.Show("Your local network IP address: \n" + Local_IP);
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -37,6 +42,23 @@ namespace NetInfo_Explorer
         private void button5_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Button 5 Clicked");
+        }
+
+
+        //Network Methods
+
+        public static string GetLocalIPAddress()
+        {
+            //DNS -- Directive method; AddressFamily&List -- Directive Method 
+            var host = Dns.GetHostEntry(Dns.GetHostName());
+            foreach (var ip in host.AddressList)
+            {
+                if (ip.AddressFamily == AddressFamily.InterNetwork)
+                {
+                    return ip.ToString();
+                }
+            }
+            throw new Exception("No network adapters with an IPv4 address in the system!");
         }
     }
 }
