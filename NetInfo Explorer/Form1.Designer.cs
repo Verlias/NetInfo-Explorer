@@ -72,7 +72,7 @@
             button3.Name = "button3";
             button3.Size = new Size(100, 23);
             button3.TabIndex = 3;
-            button3.Text = "button3";
+            button3.Text = "Display Devices";
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
@@ -82,17 +82,18 @@
             button4.Name = "button4";
             button4.Size = new Size(100, 23);
             button4.TabIndex = 4;
-            button4.Text = "button4";
+            button4.Text = "Display Ping";
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
             // button5
             // 
+            button5.Font = new Font("Segoe UI", 9F);
             button5.Location = new Point(12, 148);
             button5.Name = "button5";
             button5.Size = new Size(100, 23);
             button5.TabIndex = 5;
-            button5.Text = "button5";
+            button5.Text = "Interfaces Info";
             button5.UseVisualStyleBackColor = true;
             button5.Click += button5_Click;
             // 
